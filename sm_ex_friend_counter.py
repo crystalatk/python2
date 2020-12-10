@@ -19,9 +19,8 @@ ramit = {
 
 def countFriends(dictionary, key, new_key):
     count = 0
-    for friends in dictionary[key]:
+    for items in dictionary[key]:
         count += 1
-    # print(friends_count)
     new_dictionary = dictionary.copy()
     new_dictionary[new_key] = count
     print(new_dictionary)
