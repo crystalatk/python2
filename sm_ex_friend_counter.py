@@ -22,7 +22,7 @@ def countFriends(dictionary, key, new_key):
     for friends in dictionary[key]:
         count += 1
     # print(friends_count)
-    new_dictionary = dictionary
+    new_dictionary = dictionary.copy()
     new_dictionary[new_key] = count
     print(new_dictionary)
     return new_dictionary
